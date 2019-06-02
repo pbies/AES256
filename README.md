@@ -25,6 +25,8 @@ No tests included.
 
 File encryption/decryption. Max is 4 GiB per file.
 
+You may drag & drop file or click the buttons to open file dialog.
+
 ## Built With
 
 Visual Studio Community
