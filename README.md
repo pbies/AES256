@@ -39,6 +39,12 @@ Edits are allowed on separate branches.
 
 When there will be new version, the old one will be overwritten.
 
+## To do
+
+For FAT32 there is limit to 4 GiB for a file. In this case after encryption file can be too big to save, so need to lower the limit for few bytes to keep the AES256 checksum.
+
+On most of other filesystems there is no problem with files larger than 4 GiB, but you must have enough RAM or swap space for whole file. Or even two such files - not tested.
+
 ## Authors
 
 * **Piotr Biesiada** - *Initial work*
