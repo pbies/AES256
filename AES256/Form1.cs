@@ -10,6 +10,11 @@ namespace AES256
     {
         private long limit = 4294967296;
 
+        // Set your salt here, change it to meet your flavor:
+        // The salt bytes must be at least 8 bytes.
+        byte[] saltBytes = new byte[] { 0xe9, 0x6c, 0xcf, 0x45, 0xe9, 0x6c, 0xcf, 0x45 }; // CRC32 for space twice
+
+
         public Form1()
         {
             InitializeComponent();
@@ -40,10 +45,6 @@ namespace AES256
         {
             byte[] encryptedBytes = null;
 
-            // Set your salt here, change it to meet your flavor:
-            // The salt bytes must be at least 8 bytes.
-            byte[] saltBytes = new byte[] { 0xe9, 0x6c, 0xcf, 0x45, 0xe9, 0x6c, 0xcf, 0x45 }; // CRC32 for space twice
-
             using (MemoryStream ms = new MemoryStream())
             {
                 using (RijndaelManaged AES = new RijndaelManaged())
@@ -72,10 +73,6 @@ namespace AES256
         public byte[] AES_Decrypt(byte[] bytesToBeDecrypted, byte[] passwordBytes)
         {
             byte[] decryptedBytes = null;
-
-            // Set your salt here, change it to meet your flavor:
-            // The salt bytes must be at least 8 bytes.
-            byte[] saltBytes = new byte[] { 0xe9, 0x6c, 0xcf, 0x45, 0xe9, 0x6c, 0xcf, 0x45 };
 
             using (MemoryStream ms = new MemoryStream())
             {
