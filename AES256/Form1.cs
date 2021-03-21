@@ -194,7 +194,7 @@ namespace AES256
 
         private void InfoBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("AES256 file encrypter and decrypter\n© 2020 Piotr Biesiada\n\n4GiB file size is max\nSalt is always the same\nYou may click the buttons to select files\nor drag & drop files to buttons", "AES256 v1.0");
+            MessageBox.Show("AES256 file encrypter and decrypter\n© 2021 Piotr Biesiada\n\n4 GiB file size is max\nSalt is always the same\nYou may click the buttons to select files\nor drag & drop files to buttons", "AES256 v1.1");
         }
     }
 }
