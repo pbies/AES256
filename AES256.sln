@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AES256", "AES256\AES256.csproj", "{E226A055-DECE-446E-BE5B-E0350801BAB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AES256", "AES256.csproj", "{E226A055-DECE-446E-BE5B-E0350801BAB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

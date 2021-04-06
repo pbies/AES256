@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AES256")]
-[assembly: AssemblyCopyright("Copyright ©  2020 Piotr Biesiada")]
+[assembly: AssemblyCopyright("Copyright ©  2021 Piotr Biesiada")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
