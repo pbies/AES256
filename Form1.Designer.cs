@@ -41,7 +41,7 @@
             this.EncryptBtn.Name = "EncryptBtn";
             this.EncryptBtn.Size = new System.Drawing.Size(259, 100);
             this.EncryptBtn.TabIndex = 0;
-            this.EncryptBtn.Text = "Encrypt";
+            this.EncryptBtn.Text = "Encrypt\r\nclick or drop";
             this.EncryptBtn.UseVisualStyleBackColor = true;
             this.EncryptBtn.Click += new System.EventHandler(this.EncryptBtn_Click);
             this.EncryptBtn.DragDrop += new System.Windows.Forms.DragEventHandler(this.EncryptBtn_DragDrop);
@@ -54,7 +54,7 @@
             this.DecryptBtn.Name = "DecryptBtn";
             this.DecryptBtn.Size = new System.Drawing.Size(259, 100);
             this.DecryptBtn.TabIndex = 1;
-            this.DecryptBtn.Text = "Decrypt";
+            this.DecryptBtn.Text = "Decrypt\r\nclick or drop";
             this.DecryptBtn.UseVisualStyleBackColor = true;
             this.DecryptBtn.Click += new System.EventHandler(this.DecryptBtn_Click);
             this.DecryptBtn.DragDrop += new System.Windows.Forms.DragEventHandler(this.DecryptBtn_DragDrop);
@@ -62,9 +62,12 @@
             // 
             // textBox1
             // 
+            this.textBox1.AcceptsTab = true;
+            this.textBox1.AccessibleDescription = "";
+            this.textBox1.AccessibleName = "";
             this.textBox1.Location = new System.Drawing.Point(13, 225);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
+            this.textBox1.PasswordChar = 'X';
             this.textBox1.Size = new System.Drawing.Size(237, 20);
             this.textBox1.TabIndex = 2;
             // 
