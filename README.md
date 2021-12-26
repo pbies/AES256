@@ -66,7 +66,9 @@ AES256
 	License
 	-------
 
-		This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
+		This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the
+		LICENSE file for details.
+
 		That means you must fulfill these requirements:
 		1. your project have the same license
 		2. you mention the original author (me)
