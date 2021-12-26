@@ -1,71 +1,79 @@
 AES256
 ======
 
-	Simple AES256 file encrypter/decrypter
+		Simple AES256 file encrypter/decrypter
 
-	## Getting Started
+	Getting Started
+	---------------
 
-	1. Download the source code
-	2. Run Visual Studio
-	3. Open solution
-	4. Build
-	5. Run
+		1. Download the source code
+		2. Run Visual Studio
+		3. Open solution
+		4. Build
+		5. Run
 
-	## Prerequisites
+	Prerequisites
+	-------------
 
-	Windows + Visual Studio
+		Windows + Visual Studio
 
-	## Installing
+	Installing
+	----------
 
-	No need to install, runs out of the box.
+		No need to install, runs out of the box.
 
-	## Running the tests
+	Running the tests
+	-----------------
 
-	No tests included.
+		No tests included.
 
-	## Purpose
+	Purpose
+	-------
 
-	File encryption/decryption. Max is 4 GiB per file.
+		File encryption/decryption. Max is 4 GiB per file.
 
-	You may drag & drop files to buttons or click the buttons to open file dialog.
+		You may drag & drop files to buttons or click the buttons to open file dialog.
 
-	## Built With
+	Built With
+	----------
 
-	Visual Studio Community
+		Visual Studio Community
 
-	## Contributing
+	Contributing
+	------------
 
-	Edits are allowed on separate branches.
+		Edits are allowed on separate branches.
 
-	## Versioning
+	Versioning
+	----------
 
-	When there will be new version, the old one will be overwritten.
+		When there will be new version, the old one will be overwritten.
 
-	## To do
+	To do
+	-----
 
-	For FAT32 there is limit to 4 GiB for a file. In this case after encryption file can be
-	too big to save, so need to lower the limit for few bytes to keep the AES256 checksum.
+		For FAT32 there is limit to 4 GiB for a file. In this case after encryption file can be
+		too big to save, so need to lower the limit for few bytes to keep the AES256 checksum.
 
-	On most of other filesystems there is no problem with files larger than 4 GiB, but you
-	must have enough RAM or swap space for whole file. Or even two such files - not tested.
+		On most of other filesystems there is no problem with files larger than 4 GiB, but you
+		must have enough RAM or swap space for whole file. Or even two such files - not tested.
 
-	## Authors
+	Authors
+	-------
 
-	* **Piotr Biesiada** - *Initial work*
+		Piotr Biesiada - Initial work
 
-	[github](https://github.com/pbies)
+	License
+	-------
 
-	[homepage](https://pbies.net/)
+		This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
+		That means you must fulfill these requirements:
+		1. your project have the same license
+		2. you mention the original author (me)
+		3. can't use scripts in commercial products if they are not free
+		4. you can freely modify and use this project for personal usage
 
-	## License
+	Acknowledgments
+	---------------
 
-	This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
-	That means you must fulfill these requirements:
-	1. your project have the same license
-	2. you mention the original author (me)
-	3. can't use scripts in commercial products if they are not free
-	4. you can freely modify and use this project for personal usage
-
-	## Acknowledgments
-
-	If you like my work please share your opinion with me!
+		If you like my work please share your opinion with me!
