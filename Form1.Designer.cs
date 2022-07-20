@@ -92,6 +92,7 @@
             this.Controls.Add(this.EncryptBtn);
             this.Name = "Form1";
             this.Text = "AES256 v1.0";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

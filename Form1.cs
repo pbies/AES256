@@ -194,7 +194,24 @@ namespace AES256
 
         private void InfoBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("AES256 file encrypter and decrypter\n© 2021 Piotr Biesiada\n\n4 GiB file size is max\nSalt is always the same\nYou may click the buttons to select files\nor drag & drop files to buttons", "AES256 v1.1");
+            MessageBox.Show("AES256 file encrypter and decrypter\n© 2022 Piotr Biesiada\n\n4 GiB file size is max\nSalt is always the same\nYou may click the buttons to select files\nor drag & drop files to buttons", "AES256 v1.1");
+        }
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void Form1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
         }
     }
 }
